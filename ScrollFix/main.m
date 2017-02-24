@@ -58,7 +58,12 @@ void handle_matching_device(void * inContext, IOReturn inResult, void * inSender
     // Set the feature to the lowest avaible resolution - like regular mice.
     report[1] = 0x00;
     result = IOHIDDeviceSetReport(inIOHIDDeviceRef, kIOHIDReportTypeFeature, ScrollWheelResolutionReportId, report, sizeof(report));
-    if (result != kIOReturnSuccess){
+    if (result == kIOReturnSuccess)
+    {
+        printf("fix applied successfully!\n");
+    }
+    else
+    {
         printf("error while sending feature report\n");
     }
     IOHIDDeviceClose(inIOHIDDeviceRef, kIOHIDOptionsTypeNone);
