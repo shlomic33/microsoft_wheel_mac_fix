@@ -6,7 +6,7 @@
 #define ScrollWheelResolutionReportId   0x12    // this is the problematic feature id.
 
 static
-CFMutableDictionaryRef createMatchingDict(UInt32 vendorID, UInt32 productID)
+CFMutableDictionaryRef create_matching_dict(UInt32 vendorID, UInt32 productID)
 {
     CFMutableDictionaryRef result = CFDictionaryCreateMutable(kCFAllocatorDefault, 0,
                                                               &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
@@ -69,7 +69,7 @@ int main(int argc, const char * argv[])
 {
     IOHIDManagerRef hid_manager = IOHIDManagerCreate(NULL, 0);
     assert(CFGetTypeID(hid_manager) == IOHIDManagerGetTypeID());
-    CFDictionaryRef matching_dict = createMatchingDict(VENDOR_ID, PRODUCT_ID);
+    CFDictionaryRef matching_dict = create_matching_dict(VENDOR_ID, PRODUCT_ID);
     IOHIDManagerSetDeviceMatching(hid_manager, matching_dict);
     IOHIDManagerRegisterDeviceMatchingCallback(hid_manager, handle_matching_device, NULL);
     IOHIDManagerScheduleWithRunLoop(hid_manager, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
