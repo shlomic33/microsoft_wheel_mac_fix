@@ -59,7 +59,7 @@ void handle_matching_device(void * inContext, IOReturn inResult, void * inSender
     report[1] = 0x00;
     result = IOHIDDeviceSetReport(inIOHIDDeviceRef, kIOHIDReportTypeFeature, ScrollWheelResolutionReportId, report, sizeof(report));
     if (result != kIOReturnSuccess){
-        printf("error when sending feature report\n");
+        printf("error while sending feature report\n");
     }
     IOHIDDeviceClose(inIOHIDDeviceRef, kIOHIDOptionsTypeNone);
     
