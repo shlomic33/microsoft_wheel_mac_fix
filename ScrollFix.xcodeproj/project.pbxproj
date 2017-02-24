@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		094888141E1FB20D00E6BF4D /* USb helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "USb helper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		094888141E1FB20D00E6BF4D /* ScrollFix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScrollFix; sourceTree = BUILT_PRODUCTS_DIR; };
 		094888171E1FB20D00E6BF4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0948881F1E1FB21500E6BF4D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 		094888151E1FB20D00E6BF4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				094888141E1FB20D00E6BF4D /* USb helper */,
+				094888141E1FB20D00E6BF4D /* ScrollFix */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,9 +77,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		094888131E1FB20D00E6BF4D /* USb helper */ = {
+		094888131E1FB20D00E6BF4D /* ScrollFix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0948881B1E1FB20D00E6BF4D /* Build configuration list for PBXNativeTarget "USb helper" */;
+			buildConfigurationList = 0948881B1E1FB20D00E6BF4D /* Build configuration list for PBXNativeTarget "ScrollFix" */;
 			buildPhases = (
 				094888101E1FB20D00E6BF4D /* Sources */,
 				094888111E1FB20D00E6BF4D /* Frameworks */,
@@ -89,9 +89,9 @@
 			);
 			dependencies = (
 			);
-			name = "USb helper";
+			name = ScrollFix;
 			productName = "USb helper";
-			productReference = 094888141E1FB20D00E6BF4D /* USb helper */;
+			productReference = 094888141E1FB20D00E6BF4D /* ScrollFix */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0948880F1E1FB20D00E6BF4D /* Build configuration list for PBXProject "USb helper" */;
+			buildConfigurationList = 0948880F1E1FB20D00E6BF4D /* Build configuration list for PBXProject "ScrollFix" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				094888131E1FB20D00E6BF4D /* USb helper */,
+				094888131E1FB20D00E6BF4D /* ScrollFix */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +242,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0948880F1E1FB20D00E6BF4D /* Build configuration list for PBXProject "USb helper" */ = {
+		0948880F1E1FB20D00E6BF4D /* Build configuration list for PBXProject "ScrollFix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				094888191E1FB20D00E6BF4D /* Debug */,
@@ -251,7 +251,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0948881B1E1FB20D00E6BF4D /* Build configuration list for PBXNativeTarget "USb helper" */ = {
+		0948881B1E1FB20D00E6BF4D /* Build configuration list for PBXNativeTarget "ScrollFix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0948881C1E1FB20D00E6BF4D /* Debug */,
