@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		094888181E1FB20D00E6BF4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 094888171E1FB20D00E6BF4D /* main.m */; };
 		094888201E1FB21500E6BF4D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0948881F1E1FB21500E6BF4D /* IOKit.framework */; };
+		09E2C7AF1E6036FD00ABAF41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2C7AE1E6036FD00ABAF41 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		094888141E1FB20D00E6BF4D /* ScrollFix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScrollFix; sourceTree = BUILT_PRODUCTS_DIR; };
-		094888171E1FB20D00E6BF4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0948881F1E1FB21500E6BF4D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		09E2C7AE1E6036FD00ABAF41 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ScrollFix/main.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		0948880B1E1FB20D00E6BF4D = {
 			isa = PBXGroup;
 			children = (
-				094888161E1FB20D00E6BF4D /* USb helper */,
+				094888161E1FB20D00E6BF4D /* ScrollFix */,
 				094888151E1FB20D00E6BF4D /* Products */,
 				0948881E1E1FB21500E6BF4D /* Frameworks */,
 			);
@@ -58,11 +58,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		094888161E1FB20D00E6BF4D /* USb helper */ = {
+		094888161E1FB20D00E6BF4D /* ScrollFix */ = {
 			isa = PBXGroup;
 			children = (
-				094888171E1FB20D00E6BF4D /* main.m */,
+				09E2C7AE1E6036FD00ABAF41 /* main.m */,
 			);
+			name = ScrollFix;
 			path = "USb helper";
 			sourceTree = "<group>";
 		};
@@ -131,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				094888181E1FB20D00E6BF4D /* main.m in Sources */,
+				09E2C7AF1E6036FD00ABAF41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
