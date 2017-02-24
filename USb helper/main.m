@@ -62,6 +62,7 @@ void handle_matching_device(void * inContext, IOReturn inResult, void * inSender
         printf("error while sending feature report\n");
     }
     IOHIDDeviceClose(inIOHIDDeviceRef, kIOHIDOptionsTypeNone);
+    CFRunLoopStop(CFRunLoopGetCurrent());
     
 }
 
