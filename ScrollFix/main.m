@@ -53,7 +53,7 @@ void handle_matching_device(void * inContext, IOReturn inResult, void * inSender
     assert(result == kIOReturnSuccess);
     
     uint8_t report[2];
-    // Feature Report ID - these is the feature of mouse scroll wheel resolution.
+    // Feature Report ID - this is the feature of mouse scroll wheel resolution.
     report[0] = ScrollWheelResolutionReportId;
     // Set the feature to the lowest avaible resolution - like regular mice.
     report[1] = 0x00;
